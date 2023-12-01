@@ -1,0 +1,46 @@
+.conteudo-footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.conteudo-footer h2 {
+  padding-top: 15px;
+  font-size: 2.5rem;
+}
+
+.conteudo-footer p {
+  margin-bottom: 30px;
+}
+
+.icones-contato::after {
+  content: "";
+  display: block;
+  background-color: gainsboro;
+  width: 1000px;
+  height: 3px;
+  margin-bottom: 30px;
+}
+
+.footer-fundo {
+  background: 
+    url('../img/decoracao-1.svg') no-repeat bottom right,
+    url('../img/decoracao-2.svg') no-repeat bottom left;
+}
+
+@media (max-width: 1050px) {
+  .icones-contato::after {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .icones-contato::after {
+    width: 300px;
+  }
+
+  .conteudo-footer h2 {
+    font-size: 2rem;
+  }
+}

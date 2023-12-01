@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; 
+  font-family: 'Roboto';
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

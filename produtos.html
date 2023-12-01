@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Listagem de produtos da loja"
+    />
+    <meta name="author" content="Gustavo Bratti Inácio" />
+
+    <title>Página de produtos - Guinho Mania</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@100;400;500;700&family=Playfair+Display+SC&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="header-fundo"">
+
+      <section class="header-container">  
+        <nav>
+          <ul class="menu">
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./index.html#contato">Contato</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+
+        <a href="./index.html" class="guinho-mania">
+          <h1>GUINHO MANIA</h1>
+        </a>
+
+        <section class="icone-header">
+
+          <a href="./carrinho.html">
+          <img
+            src="img/carrinho-icon.svg"
+            alt="Ícone de carrinho representando as compras"/>         
+          </a>
+
+        </section>
+
+        <section class="icone-menu">
+          <button onclick="menuShow()">
+            <img src="./img/icone-menu.svg" alt="Ícone de menu" class="img-icone-menu">
+          </button>
+        </section>
+
+        <nav class="menu-mobile">
+          <ul>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
+          
+          <a href="./carrinho.html" class="carrinho-menu">
+            <img src="img/carrinho-icon.svg" alt="Ícone de carrinho representando as compras"/>         
+          </a>
+        </nav>
+
+      </section>
+    </header>
+
+    <main class="fundo-produtos">
+      <section class="container-principal">
+        <section class="container-produtos" id="containerProdutos"></section>
+      </section>
+    </main>
+
+    <footer class="footer-fundo">
+
+      <section class="conteudo-footer">
+
+        <h2>Guinho Mania</h2>
+
+        <section class="icones-contato">
+          <a href="https://web.whatsapp.com/send?phone=5548999553099" target="_blank">
+            <img src="./img/whatsapp-icon.svg" alt="Ícone do whatsapp">
+          </a>
+
+          <a href="http://instagram.com/guinhomania" target="_blank">
+            <img src="./img/instagram-icon.svg" alt="Ícone do instagram">
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=100079887623968" target="_blank">
+            <img src="./img/facebook-icon.svg" alt="Ícone do facebook">
+          </a>
+        </section>
+        
+        <p>Alguns direitos reservados.</p>
+
+      </section>
+
+    </footer>
+
+
+    <script src="./js/produtos.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+
+  </body>
+</html>

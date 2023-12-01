@@ -1,0 +1,148 @@
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.icone-header {
+  display: flex;
+  justify-self: end;
+  align-self: center;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.menu a:after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: red;
+  display: block;
+}
+
+.menu a:hover {
+  color: red
+}
+
+.menu a:hover:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.header-container h1 {
+  justify-self: center;
+  font-size: 3.5rem;
+  color: gray;
+  white-space: nowrap;
+}
+
+.icone-menu, .menu-mobile {
+  display: none;
+}
+
+.icone-menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-icone-menu {
+  width: 30px; 
+}
+
+.menu-mobile {
+  display: none;
+  text-align: center;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-mobile li {
+  margin: 10px 0;
+}
+
+.menu-mobile a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 1600px) {
+  .header-container {
+    max-width: 1200px;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header-container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .menu, .icone-header {
+    display: none
+  }
+
+  .menu-mobile ul {
+    padding: 10px;
+  }
+
+  .menu-mobile.show {
+    display: grid;
+    grid-column: 2;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto 1fr;
+  }
+
+  .carrinho-menu {
+    grid-column: 1;
+  }
+
+  .menu-mobile.show ul {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+  }
+
+  .header-container {
+    grid-template-columns: auto;
+  }
+
+  .header-container h1 {
+    grid-column: 1;
+  }
+
+  .icone-menu {
+    display: block;
+    grid-column: 3;
+    align-self: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+}

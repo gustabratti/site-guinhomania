@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guinho Mania. A sua loja de brinquedos e eletrônicos favorita!"
+    />
+    <meta name="author" content="Gustavo Bratti Inácio" />
+
+    <title>Guinho Mania</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@100;400;500;700&family=Playfair+Display+SC&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="header-fundo"">
+      <section class="header-container">  
+        <nav>
+          <ul class="menu">
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+
+        <a href="./index.html" class="guinho-mania">
+          <h1>GUINHO MANIA</h1>
+        </a>
+
+        <section class="icone-header">
+
+          <a href="./carrinho.html">
+          <img
+            src="img/carrinho-icon.svg"
+            alt="Ícone de carrinho representando as compras"/>         
+          </a>
+
+        </section>
+
+        <section class="icone-menu">
+          <button onclick="menuShow()">
+            <img src="./img/icone-menu.svg" alt="Ícone de menu" class="img-icone-menu">
+          </button>
+        </section>
+
+        <nav class="menu-mobile">
+          <ul>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
+          
+          <a href="./carrinho.html" class="carrinho-menu">
+            <img src="img/carrinho-icon.svg" alt="Ícone de carrinho representando as compras"/>         
+          </a>
+        </nav>
+
+    </header>
+
+    <main class="principal-fundo" id="carrossel-fundo">
+
+      <div class="carrossel-images">
+        <img src="./img/imagem-home-1.jpg">
+        <img src="./img/imagem-home-2.jpg">
+        <img src="./img/imagem-home-3.jpg">
+        <img src="./img/imagem-home-4.jpg">
+        <img src="./img/imagem-home-5.jpg">
+      </div>
+
+      <section class="escurecimento-imagem">
+        <section class="principal-container">
+
+          <section class="principal-informacoes">
+            <h1>A SUA LOJA DE BRINQUEDOS E ELETRÔNICOS FAVORITA!</h1>
+            <button ><a href="./produtos.html">ESCOLHA O SEU</a></button>
+          </section>
+
+        </section>
+      </section>
+
+    </main>
+
+    <section class="separador-conteudo">
+
+      <span></span>
+      <img src="./img/decoracao-4.svg" alt="" class="img-decoracao-4">
+      <img src="./img/decoracao-5.svg" alt="" class="img-decoracao-5"">
+
+    </section>
+
+    <section class="fale-conosco-fundo" id="contato">
+
+      <section class="fale-conosco-container">
+
+       <section class="informacoes-contato">
+          <h2>FALE CONOSCO!</h2>
+
+          <p>Av. Sete de Setembro, 2057 <br> Loja 21</p>
+        
+          <p>guinhomania@gmail.com <br> (48) 99955-3099</p>
+        </section>
+
+        <img src="./img/foto-headset.png" alt="Foto de um headset" class="imagem-headset">
+        <img src="./img/localizacao.png" alt="Localização da loja Guinho Mania" class="imagem-localizacao">
+
+      </section>
+    </section>
+
+    <footer class="footer-fundo">
+
+      <section class="conteudo-footer">
+
+        <h2>Guinho Mania</h2>
+
+        <section class="icones-contato">
+          <a href="https://web.whatsapp.com/send?phone=5548999553099" target="_blank">
+            <img src="./img/whatsapp-icon.svg" alt="Ícone do whatsapp">
+          </a>
+
+          <a href="http://instagram.com/guinhomania" target="_blank">
+            <img src="./img/instagram-icon.svg" alt="Ícone do instagram">
+          </a>
+
+          <a href="https://www.facebook.com/profile.php?id=100079887623968" target="_blank">
+            <img src="./img/facebook-icon.svg" alt="Ícone do facebook">
+          </a>
+        </section>
+        
+        <p>Alguns direitos reservados.</p>
+
+      </section>
+
+    </footer>
+    <script src="./js/principal-carrossel.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+
+  </body>
+</html>

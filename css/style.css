@@ -1,0 +1,18 @@
+/*configs globais*/
+@import "./global/global.css";
+
+/*estilos globais*/
+@import "./global/header.css";
+@import "./global/login.css";
+@import "./global/footer.css";
+
+/*estilos pagina home*/
+@import "./home/principal.css";
+@import "./home/separador.css";
+@import "./home/fale-conosco.css";
+
+/*estilos pagina sobre*/
+@import "./sobre/sobre.css";
+
+/*estilos pagina de produtos*/
+@import "./produtos/produtos.css"
