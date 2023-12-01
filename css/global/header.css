@@ -137,6 +137,7 @@ nav {
     display: block;
     grid-column: 3;
     align-self: center;
+    margin-bottom: 20px;
   }
 }
 
